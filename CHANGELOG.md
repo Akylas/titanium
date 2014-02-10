@@ -1,4 +1,18 @@
-3.2.0
+3.2.x
+-------------------
+ * When installing a Titanium SDK using the CI version name, but omitting the branch, it now automatically scans all branches [TIMOB-15899]
+ * Fixed 'sdk' command to display custom Titanium SDK paths in SDK Install Locations. [TIMOB-16141]
+ * Fixed bug when a SDK >=3.2.0 build is run with --password instead of --store-password. [TIMOB-16354]
+
+3.2.1
+-------------------
+ * Fixed bug where npm version was not being displayed due to race condition [TIMOB-15962]
+ * Fixed bug where if the node executable is not called "node", the CLI would error because argv[0] != process.execPath. [TIMOB-15804]
+ * Fixed bug when running "ti help" for a command that doesn't have 'platforms' [TIMOB-16233]
+ * Fixed bug where CLI commands that require a minimum version of the Titanium CLI were not being checked properly. [TIMOB-16361]
+ * Fixed command and hook loading when comparing the minimum required CLI version in which the version has a -beta suffix. [TIMOB-16365]
+
+3.2.0 (12/20/2013)
 -------------------
  * Completely overhauled entire CLI architecture
  * Brand new setup command with 'check environment' and 'quick setup' sections
@@ -32,9 +46,17 @@
  * Fixed bug where --quiet, --no-prompt, and --no-progress-bars when setting a value on via ti config or running ti setup would save those flags to the cli config
  * Added alias --no-color for --no-colors because I can never remember which one it is
  * Updated third party Node.js module dependency version where safe to do so
- * Added support for config option cli.rejectUnauthorized to skip SSL cert validation [TIMOB-15743]
  * Updated the 'setup check' command to work offline and display connection diagnostics
  * Fixed bug when --username and --password are supplied at the command line
+ * Fixed bug with the paths.sdks config setting continuously appending the default Titanium SDK install location [TIMOB-15813]
+ * Fixed bug with 'npm outdated' returning a version of 'missing' [TIMOB-15842]
+ * Removed Java 1.7 warning from the 'setup check' command
+ * Fixed bug where options that have valid values but don't have a validate function never have their callbacks fired [TIMOB-15935]
+
+3.1.4 (12/18/2013)
+-------------------
+ * Fixed bug with detecting if CLI is being invoked by node.exe instead of titanium.cmd on Windows [TIMOB-14933]
+ * Added support for config option cli.rejectUnauthorized to skip SSL cert validation [TIMOB-15783]
 
 3.1.2 (8/15/2013)
 -------------------
