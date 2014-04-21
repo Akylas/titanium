@@ -1,3 +1,13 @@
+3.3.0
+-------------------
+ * Fixed bug with 'ti setup' when the selected Titanium SDK does not exist [TIMOB-12268]
+ * Added Genymotion environment information to 'ti info' command [TIMOB-16349]
+ * Fixed bug where OS and Node.js info was always being returned in 'ti info'
+ * Added wp8 publisher guid to 'ti setup' [TIMOB-16748]
+ * Added conflicting hook detection and improved hook error reporting [TIMOB-13847]
+ * Added support for an array of hook events to emit; needed for [TIMOB-10752]
+ * Updated Appcelerator API URLs to api.appcelerator.com [TIMOB-16282]
+
 3.2.3
 -------------------
  * When installing a Titanium SDK using the CI version name, but omitting the branch, it now automatically scans all branches [TIMOB-15899]
@@ -5,6 +15,7 @@
  * Fixed bug where the password was not being discarded after logging in and ends up confusing the Android build [TIMOB-16422]
  * Fixed list of options being displayed in help screen when colors are enabled on Windows [TIMOB-12759]
  * Added temp directory checking to the 'setup check' command [TIMOB-16671]
+ * Fixed disabling of colors for 'setup' command. Also fixed --no-color flag [TIMOB-16853]
 
 3.2.2
 -------------------
