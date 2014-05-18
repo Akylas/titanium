@@ -7,8 +7,12 @@
  * Added conflicting hook detection and improved hook error reporting [TIMOB-13847]
  * Added support for an array of hook events to emit; needed for [TIMOB-10752]
  * Updated Appcelerator API URLs to api.appcelerator.com [TIMOB-16282]
+ * Added support for Titanium SDKs that can be named anything [TIMOB-16052]
+ * Improved error handling when sdk command requests list of releases [TIMOB-16917]
+ * Fixed bug with prompting for missing or invalid options that use generic prompting
+ * Fixed sorting of Titanium SDKs in the 'sdk select' command to only list valid SDKs and order by their actual version number [TIMOB-16974]
 
-3.2.3
+3.2.3 (5/1/2014)
 -------------------
  * When installing a Titanium SDK using the CI version name, but omitting the branch, it now automatically scans all branches [TIMOB-15899]
  * Fixed 'sdk' command to display custom Titanium SDK paths in SDK Install Locations [TIMOB-16141]
