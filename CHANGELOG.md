@@ -1,4 +1,8 @@
-3.3.0
+3.3.1 
+-------------------
+ * Added support for selecting latest stable SDK [TIMOB-17378]
+
+3.3.0 (7/17/14)
 -------------------
  * Fixed bug with 'ti setup' when the selected Titanium SDK does not exist [TIMOB-12268]
  * Added Genymotion environment information to 'ti info' command [TIMOB-16349]
@@ -11,6 +15,13 @@
  * Improved error handling when sdk command requests list of releases [TIMOB-16917]
  * Fixed bug with prompting for missing or invalid options that use generic prompting
  * Fixed sorting of Titanium SDKs in the 'sdk select' command to only list valid SDKs and order by their actual version number [TIMOB-16974]
+ * Fixed bug where integer config values were being saved as strings instead of numbers [TIMOB-17000]
+ * Fixed 'setup check' command when fetching available Node.js and NPM releases [TIMOB-16996]
+ * Fixed bug with boolean config setting values being saved as integers [TIMOB-17087]
+ * Moved the sending of analytics from the 'exit' event to the command finished callback [TIMOB-17046]
+ * Fixed bug where the CLI would wait for analytics to send [TIMOB-17206]
+ * Fixed formatting of multiline issues in 'ti info' [TIMOB-17221]
+ * Fixed display of Android tools that are newer than the maximum supported version [TIMOB-17221]
 
 3.2.3 (5/1/2014)
 -------------------
