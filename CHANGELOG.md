@@ -1,4 +1,8 @@
-3.4.0
+Unversioned
+-------------------
+ * Fixed bug in Titanium SDK 3 bug fix hook where Xcode should only be removed when running on OS X [TIMOB-17808]
+
+3.4.0 (9/29/14)
 -------------------
  * Added support for selecting latest stable SDK [TIMOB-17378]
  * Fixed issues with config.json being overwritten at the same time [TIMOB-17346]
@@ -8,6 +12,7 @@
  * Fixed bug with abbreviated options that don't have a value being set to true
  * Fixed bug where Xcode 6 was not being removed from Titanium SDK 3.3.0 and older from the "ti info" results [TIMOB-17649]
  * Fixed bug where "ti info" failed when an invalid Titanium SDK is selected [TIMOB-17666]
+ * Added support for paths.xcode in "ti config" [TIMOB-17696]
 
 3.3.0 (7/17/14)
 -------------------
