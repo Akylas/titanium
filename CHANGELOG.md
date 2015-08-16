@@ -1,8 +1,24 @@
-3.5.0
+4.1.4 (8/4/2015)
+-------------------
+ * Fixed bug where the command line args weren't being parsed again after handling a branching option [TIMOB-19281]
+
+4.0.1 (5/29/2015)
+-------------------
+ * Fixed bug with building an app that had a different Titanium SDK version than the selected SDK and abbreviated option names were being used [TIMOB-18826]
+
+4.0.0 (5/20/2015)
 -------------------
  * Added support for generic Titanium SDK-level info [TIMOB-17836]
  * Allow the colors to be controlled explicitly regardless if attached or detached from a TTY
  * Fixed bug where abbreviated options without values passed in before the last argument being treated as a boolean [TIMOB-18067]
+ * Ripped out all authentication requirements. Analytics are now anonymous. Login and logout are no ops. [TIMOB-18711]
+ * Capped SDK version monkey patch for which --password is converted to --store-password for Android [TIMOB-18783]
+
+3.4.2 (3/6/2015)
+-------------------
+ * Fixed compatibility issues with Node 0.12 [TIMOB-18538]
+ * Added Node.js version check when using a Titanium SDK [TIMOB-18629]
+ * Drop support for Node.js 0.8 [TIMOB-18414]
 
 3.4.1 (11/14/14)
 -------------------
