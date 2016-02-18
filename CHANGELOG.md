@@ -1,3 +1,29 @@
+5.0.4 (9/17/2015)
+-------------------
+ * Added actual SDK version to `ti sdk list` output as well as SDK details to `ti sdk list -o json` [TIMOB-19541]
+ * Updated NPM dependencies
+
+5.0.3 (9/9/2015)
+-------------------
+ * No longer display latest Node.js and NPM version as it confusing may imply the Titanium CLI supports them [TIMOB-19470]
+ * Updated NPM dependencies
+
+5.0.2 (9/9/2015)
+-------------------
+ * Fixed bug where 'ti setup check' was reporting the latest NPM version, not the latest stable version [TIMOB-19470]
+
+5.0.1 (9/3/2015)
+-------------------
+ * Updated to node-appc 0.2.31 which fixes a bug with the JDK detection
+
+5.0.0 (9/3/2015)
+-------------------
+ * Updated to node-appc 0.2.30
+
+4.1.5 (8/18/2015)
+-------------------
+ * Fixed console colors when running in PowerShell [TIMOB-19126]
+
 4.1.4 (8/4/2015)
 -------------------
  * Fixed bug where the command line args weren't being parsed again after handling a branching option [TIMOB-19281]
