@@ -46,7 +46,7 @@
   "dependencies": {
     "async": "1.4.2",
     "colors": "1.1.2",
-    "decompress-zip": "^0.2.0",
+    "decompress-zip": "gAkylas/decompress-zip",
     "fields": "0.1.24",
     "humanize": "0.0.9",
     "moment": "2.10.6",
