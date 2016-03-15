@@ -42,7 +42,6 @@
 		"colors": "1.1.2",
 		"fields": "0.1.24",
 		"humanize": "0.0.9",
-		"longjohn": "0.2.9",
 		"moment": "2.10.6",
 		"node-appc": "Akylas/node-appc",
 		"request": "2.62.0",
