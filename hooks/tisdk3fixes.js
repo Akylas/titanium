@@ -158,7 +158,18 @@ exports.init = function (logger, config, cli, appc) {
 			// as initially intended.
 
 			var pd = data.result[1].options['project-dir'],
-				ti = require(path.join(cli.sdk.path, 'node_modules', 'titanium-sdk', 'lib', 'titanium.js')),
+				tiPath = path.join(cli.sdk.path, 'node_modules', 'node-titanium-sdk', 'lib', 'titanium.js');
+
+			if (!fs.existsSync(tiPath)) {
+				tiPath = path.join(cli.sdk.path, 'node_modules', 'titanium-sdk', 'lib', 'titanium.js');
+			}
+
+			if (!fs.existsSync(tiPath)) {
+				// we have bigger problems :(
+				return;
+			}
+
+			var ti = require(tiPath),
 				realValidateCorrectSDK = ti.validateCorrectSDK;
 
 			if (pd && typeof pd.validate === 'function') {
